@@ -1,0 +1,154 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "main",
+        "designer|userClassName": "PrincipalViewport",
+        "layout": "border"
+    },
+    "name": "MyViewport",
+    "designerId": "9f4ba940-fc1d-4a7b-87fc-90b7593ba02d",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "title": "Productos"
+            },
+            "name": "MyGridPanel",
+            "designerId": "a0f4387d-d63c-4fe1-aaaf-7eb073ceec6a",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "text": "Nombre"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "0cb0a3fa-2034-4483-9ab8-6d66f9542aa4"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "number",
+                        "text": "Precio"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "00562a5d-2e74-4004-b12f-9a028955fa86"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "date",
+                        "text": "Fecha Publicación"
+                    },
+                    "name": "MyDateColumn",
+                    "designerId": "cafda726-c195-42e0-a63a-23edd5ee90a3"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView",
+                    "designerId": "b4b9833f-5adb-485d-ae74-b2c26b594d4a"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelBoxReady",
+                        "implHandler": [
+                            "    var store = Ext.data.StoreManager.lookup(\"ProductoStore\");",
+                            "    store.add({",
+                            "        nombre: 'Portatil',",
+                            "        precio: 2000000,",
+                            "        id: 1",
+                            "    });"
+                        ],
+                        "name": "boxready",
+                        "scope": "me"
+                    },
+                    "name": "onGridpanelBoxReady",
+                    "designerId": "7fd89153-aa0d-40fc-bf1e-8de1cb3acb07"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "layout|region": "west",
+                "title": "Filtros",
+                "width": 282
+            },
+            "name": "MyForm1",
+            "designerId": "08ee45d5-c212-42ea-a49b-3c238d69e277",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "Ingrese Fecha, Precio, Nombre",
+                        "fieldLabel": "Buscar",
+                        "layout|anchor": "100%"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "c865b91e-7fd6-41b2-9501-2ed6e445ea3a"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Buscar"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "9373a45c-17a2-4087-a8f4-ea56732c384f"
+                }
+            ]
+        }
+    ]
+}

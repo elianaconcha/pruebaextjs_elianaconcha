@@ -1,0 +1,52 @@
+{
+    "name": "PruebaLoginExtJS",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": "C:/Program Files/Apache Software Foundation/Apache Tomcat 8.0.15/webapps/PruebaLoginExtjs",
+        "projectHasEnabledWebServer": false,
+        "lockUrlPrefix": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "displayfield-ExtBox1-1238-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1127-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1186-inputEl": "a new version of the framework is available"
+    },
+    "xdsVersion": "3.2.0",
+    "xdsBuild": 339,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext41",
+    "viewOrderMap": {
+        "view": [
+            "148c6ced-fa9c-437c-87a1-2e769ddd2d3d",
+            "9f4ba940-fc1d-4a7b-87fc-90b7593ba02d"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [
+            "96f1156d-6a22-4d78-bee3-ee7f97216e16"
+        ],
+        "resource": [
+            "cbc3f6ce-44af-49ba-b1cb-f57bbc462897"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
